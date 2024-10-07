@@ -7,7 +7,7 @@ This repository contains the code for a **full-stack Todo List application** bui
 
 ### **GitHub Repository**: [https://github.com/elviajero971/todo_app](https://github.com/elviajero971/todo_app)
 
-### **Live Demo**: [View Live on Vercel](https://www.todo-app-frontend-tawny.vercel.app/)
+### **Live Demo**: [View Live on Vercel](https://todo-app-frontend-tawny.vercel.app/)
 
 ## 🎯 Features
 
