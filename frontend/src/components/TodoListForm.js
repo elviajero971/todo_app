@@ -15,7 +15,7 @@ const TodoListForm = ({ fetchTodoLists }) => {
       }, 3000);
       return;
     }
-    await axios.post('http://localhost:5033/api/todo-lists', { name: listName, created_at: Date.now() });
+    await axios.post('${process.env.URL}/api/todo-lists', { name: listName, created_at: Date.now() });
     setListName('');
     fetchTodoLists();
   };

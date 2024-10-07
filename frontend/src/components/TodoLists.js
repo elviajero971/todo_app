@@ -12,7 +12,7 @@ const TodoLists = () => {
   }, []);
 
   const fetchTodoLists = async () => {
-    const response = await axios.get('http://localhost:5033/api/todo-lists');
+    const response = await axios.get('${process.env.URL}/api/todo-lists');
     setTodoLists(response.data);
   };
 
