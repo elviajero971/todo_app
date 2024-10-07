@@ -23,20 +23,50 @@ Here’s an overview of the folder structure of the project:
 
 ```bash
 .
-├── backend                # Backend source code (Node.js + Express)
-│   ├── models             # Mongoose schemas and models
-│   ├── routes             # API routes for todos and todo lists
-│   ├── .env.example       # Example of environment variables
-│   └── server.js          # Express server entry point
-├── frontend               # Frontend source code (React)
-│   ├── src
-│   │   ├── components     # Reusable React components (TodoForm, TodoList, etc.)
-│   │   ├── App.js         # Main React component
-│   │   └── index.js       # React entry point
-│   ├── public             # Static files like index.html
-│   └── .env.example       # Example of environment variables for React
-├── .gitignore             # Files to be ignored in Git
-└── README.md              # This file
+├── backend                      # Backend source code (Node.js + Express)
+│   ├── models                   # Mongoose schemas and models
+│   │   ├── Todo.js              # Todo schema
+│   │   ├── TodoList.js          # TodoList schema
+│   ├── routes                   # API routes
+│   │   ├── todoLists.js         # Routes for TodoList CRUD operations
+│   │   ├── todos.js             # Routes for Todo CRUD operations
+│   ├── seeds                    # Seed data for the database
+│   │   └── seed.js              # Seed script to populate initial data
+│   ├── .env                     # Environment variables for backend
+│   ├── index.js                 # Entry point for the Express server
+│   ├── package-lock.json        # Lockfile for npm dependencies
+│   ├── package.json             # Backend dependencies and scripts
+│   ├── vercel.json              # Vercel configuration for deployment
+├── frontend                     # Frontend source code (React)
+│   ├── public                   # Static files like index.html
+│   ├── src                      # Main React source folder
+│   │   ├── components           # Reusable React components
+│   │   │   ├── Notification.js  # Notification component
+│   │   │   ├── TodoForm.js      # Form to add todos
+│   │   │   ├── TodoItem.js      # Single Todo item component
+│   │   │   ├── TodoList.js      # TodoList component
+│   │   │   ├── TodoListForm.js  # Form to add TodoLists
+│   │   │   ├── TodoListItem.js  # Single TodoList item component
+│   │   │   ├── TodoLists.js     # List of all TodoLists
+│   │   │   └── Todos.js         # List of Todos inside a TodoList
+│   │   ├── utils                # Utility functions
+│   │   │   └── dateUtils.js     # Utility to format dates
+│   │   ├── App.css              # Styles for the app
+│   │   ├── App.js               # Main React App component
+│   │   ├── App.test.js          # Unit tests for the App
+│   │   ├── index.css            # Global CSS
+│   │   ├── index.js             # Entry point for the React app
+│   │   ├── logo.svg             # Logo for the app
+│   │   ├── reportWebVitals.js   # Performance reporting for React app
+│   │   └── setupTests.js        # Setup file for Jest tests
+│   ├── .env                     # Environment variables for frontend
+│   ├── package-lock.json        # Lockfile for npm dependencies
+│   ├── package.json             # Frontend dependencies and scripts
+│   ├── postcss.config.js        # PostCSS configuration
+│   ├── tailwind.config.js       # Tailwind CSS configuration
+│   ├── README.md                # Project README file
+│   └── vercel.json              # Vercel configuration for deployment
+├── .gitignore                   # Files to be ignored by Git
 ```
 
 ### **Key Folders**:
