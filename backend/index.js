@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const app = express();
 
+console.log('Allowed origin:', process.env.REACT_APP_FRONTEND_URL);
+
 // Middleware
 app.use(cors({
     origin: process.env.REACT_APP_FRONTEND_URL,
