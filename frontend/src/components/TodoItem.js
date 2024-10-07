@@ -11,7 +11,7 @@ const TodoItem = ({ todo, fetchTodos, listId }) => {
 
   const toggleComplete = async () => {
     try {
-      await axios.patch(`${process.env.URL}/api/${listId}/todos/${todo._id}`, {
+      await axios.patch(`${process.env.REACT_APP_URL}/api/${listId}/todos/${todo._id}`, {
         completed: !todo.completed,
       });
       fetchTodos();
@@ -29,7 +29,7 @@ const TodoItem = ({ todo, fetchTodos, listId }) => {
         return;
         }
     try {
-      await axios.patch(`${process.env.URL}/api/${listId}/todos/${todo._id}`, {
+      await axios.patch(`${process.env.REACT_APP_URL}/api/${listId}/todos/${todo._id}`, {
         title: newTitle,
       });
       setIsEditing(false);
@@ -41,7 +41,7 @@ const TodoItem = ({ todo, fetchTodos, listId }) => {
 
   const deleteTodo = async () => {
     try {
-      await axios.delete(`${process.env.URL}/api/${listId}/todos/${todo._id}`);
+      await axios.delete(`${process.env.REACT_APP_URL}/api/${listId}/todos/${todo._id}`);
       fetchTodos();
     } catch (err) {
       console.error(err);

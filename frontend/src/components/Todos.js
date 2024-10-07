@@ -13,7 +13,7 @@ const Todos = () => {
 
   const fetchTodos = async () => {
     try {
-      const response = await axios.get(`${process.env.URL}/api/todo-lists/${listId}`);
+      const response = await axios.get(`${process.env.REACT_APP_URL}/api/todo-lists/${listId}`);
       setList(response.data);
       setSortedTodos(response.data.todos);  // Initialize with fetched todos
     } catch (err) {

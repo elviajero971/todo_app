@@ -18,13 +18,13 @@ const TodoListItem = ({ list, fetchTodoLists }) => {
       }, 3000);
       return;
     } else {
-      await axios.patch(`${process.env.URL}/api/todo-lists/${id}`, { name: newName });
+      await axios.patch(`${process.env.REACT_APP_URL}/api/todo-lists/${id}`, { name: newName });
       fetchTodoLists();
     }
   };
 
   const deleteList = async (id) => {
-    await axios.delete(`${process.env.URL}/api/todo-lists/${id}`);
+    await axios.delete(`${process.env.REACT_APP_URL}/api/todo-lists/${id}`);
     fetchTodoLists();
   };
 

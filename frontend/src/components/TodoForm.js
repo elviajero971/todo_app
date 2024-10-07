@@ -16,7 +16,7 @@ const TodoForm = ({ listId, fetchTodos }) => {
         }, 3000);
         return;
     } else {
-        await axios.post(`${process.env.URL}/api/${listId}/todos`, { title: title, created_at: Date.now() });
+        await axios.post(`${process.env.REACT_APP_URL}/api/${listId}/todos`, { title: title, created_at: Date.now() });
         setTitle('');
         fetchTodos();
     }
