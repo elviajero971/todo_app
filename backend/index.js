@@ -6,7 +6,9 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: process.env.REACT_APP_FRONTEND_URL,
+  }));
 app.use(express.json());
 
 // Connect to MongoDB
