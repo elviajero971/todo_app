@@ -124,7 +124,6 @@ frontend/.env
 frontend/.next/
 frontend/out/
 frontend/.cache/
-frontend/public/
 
 # Backend specific ignores
 backend/node_modules/
