@@ -5,8 +5,6 @@
 
 This repository contains the code for a **full-stack Todo List application** built with the **MERN stack** (MongoDB, Express, React, Node.js). The app allows users to create, update, delete, and manage their tasks with a clean and responsive UI. This project showcases modern web development practices using **React** for the frontend, **Node.js** and **Express** for the backend, and **MongoDB** as the database.
 
-### **GitHub Repository**: [https://github.com/elviajero971/todo_app](https://github.com/elviajero971/todo_app)
-
 ### **Live Demo**: [View Live on Vercel](https://todo-app-frontend-tawny.vercel.app/)
 
 ## 🎯 Features
